@@ -18,7 +18,8 @@ data.then(result => {
 
         let link = document.createElement('td')
         let anchor = document.createElement('a')
-        anchor.setAttribute('href','#')
+        let href = './posts.html?id=' + element.id + '&name=' + element.name
+        anchor.setAttribute('href', href)
         anchor.textContent = 'See Posts'
         link.appendChild(anchor)
 
